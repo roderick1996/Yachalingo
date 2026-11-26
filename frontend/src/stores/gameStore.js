@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import axios from 'axios';
+import api from '../utils/api';
 
 const MAX_HEARTS = 5;
 
@@ -21,7 +21,7 @@ export const useGameStore = defineStore('game', {
       this.status = 'loading'; this.error = '';
       Object.assign(this, { hearts: MAX_HEARTS, xp: 0, streak: 0, index: 0, mastered: [], selected: null, result: null });
       try {
-        const { data } = await axios.get('/api/game/session', { params: ids.length ? { ids: ids.join(',') } : { count } });
+        const { data } = await api.get('/game/session', { params: ids.length ? { ids: ids.join(',') } : { count } });
         this.queue = data.items; this.total = data.items.length;
         this.status = this.total ? 'playing' : 'empty';
       } catch { this.error = 'No se pudo cargar el juego'; this.status = 'empty'; }
@@ -29,7 +29,7 @@ export const useGameStore = defineStore('game', {
     select(id) { if (!this.result) this.selected = id; },
     async check() {
       if (!this.selected || this.result) return;
-      const { data } = await axios.post('/api/game/answer', { riddleId: this.current.id, imageId: this.selected });
+      const { data } = await api.post('/game/answer', { riddleId: this.current.id, imageId: this.selected });
       this.result = data;
       if (data.correct) {
         this.xp += 10; this.streak++;

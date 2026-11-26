@@ -1,7 +1,7 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
-import axios from 'axios';
+import api from '../utils/api';
 import { useProgressStore } from 'stores/progressStore';
 import MascotFrog from 'components/MascotFrog.vue';
 import SchoolBadge from 'components/SchoolBadge.vue';
@@ -40,7 +40,7 @@ function go(n) { router.push({ path: '/play', query: { ids: n.ids.join(','), key
 function practice() { router.push({ path: '/play', query: { key: 'practice' } }); }
 
 onMounted(async () => {
-  try { units.value = (await axios.get('/api/learn/units')).data; } finally { loading.value = false; }
+  try { units.value = (await api.get('/learn/units')).data; } finally { loading.value = false; }
 });
 </script>
 
