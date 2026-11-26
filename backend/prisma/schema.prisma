@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Para MySQL cambia a: provider = "mysql"
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Image {
+  id        Int      @id @default(autoincrement())
+  filename  String   @unique
+  label     String
+  createdAt DateTime @default(now())
+  riddles   Riddle[]
+}
+
+model Unit {
+  id       Int      @id @default(autoincrement())
+  order    Int      @unique
+  title    String   // Quechua
+  subtitle String   @default("") // Español
+  icon     String   @default("🐸")
+  color    String   @default("#58cc02")
+  riddles  Riddle[]
+}
+
+model Riddle {
+  id            Int      @id @default(autoincrement())
+  quechua       String   @db.Text
+  translation   String   @default("") @db.Text
+  hint          String   @default("") @db.Text
+  explanation   String   @default("") @db.Text
+  answerLabel   String
+  answerImageId Int?
+  answerImage   Image?   @relation(fields: [answerImageId], references: [id], onDelete: SetNull)
+  unitId        Int?
+  unit          Unit?    @relation(fields: [unitId], references: [id], onDelete: SetNull)
+  position      Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

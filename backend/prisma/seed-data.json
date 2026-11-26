@@ -1,0 +1,662 @@
+{
+ "units": [
+  {
+   "order": 1,
+   "title": "Ayllu kawsay",
+   "subtitle": "Vida andina",
+   "icon": "🏔️",
+   "color": "#58cc02"
+  },
+  {
+   "order": 2,
+   "title": "Uywakuna",
+   "subtitle": "Animales",
+   "icon": "🐑",
+   "color": "#ce82ff"
+  },
+  {
+   "order": 3,
+   "title": "Pachamama",
+   "subtitle": "Naturaleza",
+   "icon": "🌎",
+   "color": "#1cb0f6"
+  },
+  {
+   "order": 4,
+   "title": "Yachaywasi",
+   "subtitle": "Escuela y juegos",
+   "icon": "🏫",
+   "color": "#ff9600"
+  },
+  {
+   "order": 5,
+   "title": "Awtukuna",
+   "subtitle": "Vehículos",
+   "icon": "🚜",
+   "color": "#ff4b4b"
+  },
+  {
+   "order": 6,
+   "title": "Motor & chasis",
+   "subtitle": "Motor y chasis",
+   "icon": "⚙️",
+   "color": "#2b70c9"
+  },
+  {
+   "order": 7,
+   "title": "Cabina & tablero",
+   "subtitle": "Cabina y tablero",
+   "icon": "🎛️",
+   "color": "#00a6a6"
+  },
+  {
+   "order": 8,
+   "title": "Seguridad & frenos",
+   "subtitle": "Seguridad y frenos",
+   "icon": "🛡️",
+   "color": "#e5a400"
+  }
+ ],
+ "images": [
+  {
+   "key": 0,
+   "file": "00-piwra.jpeg",
+   "label": "Piwra"
+  },
+  {
+   "key": 1,
+   "file": "01-puchka-huso.jpeg",
+   "label": "Puchka (Huso)"
+  },
+  {
+   "key": 2,
+   "file": "02-pxisquynu-trompo.jpeg",
+   "label": "P’isquyñu (Trompo)"
+  },
+  {
+   "key": 3,
+   "file": "03-kuka-coca.jpeg",
+   "label": "Kuka (Coca)"
+  },
+  {
+   "key": 4,
+   "file": "04-jukxucha-raton.jpeg",
+   "label": "Juk’ucha (Ratón)"
+  },
+  {
+   "key": 5,
+   "file": "05-anathuya-zorrino.jpeg",
+   "label": "Añathuya (Zorrino)"
+  },
+  {
+   "key": 6,
+   "file": "06-chxullu-gorro.jpeg",
+   "label": "Ch’ullu (Gorro)"
+  },
+  {
+   "key": 7,
+   "file": "07-siwilla-cebolla.jpeg",
+   "label": "Siwilla (Cebolla)"
+  },
+  {
+   "key": 8,
+   "file": "08-uwija-oveja.jpeg",
+   "label": "Uwija (Oveja)"
+  },
+  {
+   "key": 9,
+   "file": "09-relampago.jpeg",
+   "label": "Relámpago"
+  },
+  {
+   "key": 10,
+   "file": "10-wayra-viento.jpeg",
+   "label": "Wayra (Viento)"
+  },
+  {
+   "key": 11,
+   "file": "11-motor.jpeg",
+   "label": "Motor"
+  },
+  {
+   "key": 12,
+   "file": "12-tractor.svg",
+   "label": "Tractor"
+  },
+  {
+   "key": 13,
+   "file": "13-teleferico.svg",
+   "label": "Teleférico"
+  },
+  {
+   "key": 14,
+   "file": "14-mototaxi.svg",
+   "label": "Mototaxi"
+  },
+  {
+   "key": 15,
+   "file": "15-moto.svg",
+   "label": "Moto"
+  },
+  {
+   "key": 16,
+   "file": "16-rastra.svg",
+   "label": "Rastra"
+  },
+  {
+   "key": 17,
+   "file": "17-suspension.jpeg",
+   "label": "Suspensión"
+  },
+  {
+   "key": 18,
+   "file": "18-ruedas.jpeg",
+   "label": "Ruedas"
+  },
+  {
+   "key": 19,
+   "file": "19-correa.jpeg",
+   "label": "Correa"
+  },
+  {
+   "key": 20,
+   "file": "20-volante.jpeg",
+   "label": "Volante"
+  },
+  {
+   "key": 21,
+   "file": "21-faros.jpeg",
+   "label": "Faros"
+  },
+  {
+   "key": 22,
+   "file": "22-puerta.jpeg",
+   "label": "Puerta"
+  },
+  {
+   "key": 23,
+   "file": "23-aire-acondicionado.jpeg",
+   "label": "Aire acondicionado"
+  },
+  {
+   "key": 24,
+   "file": "24-freno-de-mano.jpeg",
+   "label": "Freno de mano"
+  },
+  {
+   "key": 25,
+   "file": "25-retrovisor.jpeg",
+   "label": "Retrovisor"
+  },
+  {
+   "key": 26,
+   "file": "26-limpiaparabrisas.jpeg",
+   "label": "Limpiaparabrisas"
+  },
+  {
+   "key": 27,
+   "file": "27-pedal-del-freno.jpeg",
+   "label": "Pedal del freno"
+  },
+  {
+   "key": 28,
+   "file": "28-llanta.jpeg",
+   "label": "Llanta"
+  },
+  {
+   "key": 29,
+   "file": "29-velocimetro.jpeg",
+   "label": "Velocímetro"
+  },
+  {
+   "key": 30,
+   "file": "30-palanca-de-cambios.jpeg",
+   "label": "Palanca de cambios"
+  },
+  {
+   "key": 31,
+   "file": "31-cinturon-de-seguridad.jpeg",
+   "label": "Cinturón de seguridad"
+  },
+  {
+   "key": 32,
+   "file": "32-rodamiento.jpeg",
+   "label": "Rodamiento"
+  },
+  {
+   "key": 33,
+   "file": "33-asiento.jpeg",
+   "label": "Asiento"
+  },
+  {
+   "key": 34,
+   "file": "34-chasis.jpeg",
+   "label": "Chasis"
+  },
+  {
+   "key": 35,
+   "file": "35-radio.jpeg",
+   "label": "Radio"
+  },
+  {
+   "key": 36,
+   "file": "36-estrella.jpeg",
+   "label": "Estrella"
+  },
+  {
+   "key": 37,
+   "file": "37-peine-de-paja.jpeg",
+   "label": "Peine de paja"
+  },
+  {
+   "key": 38,
+   "file": "38-lapiz.jpeg",
+   "label": "Lápiz"
+  },
+  {
+   "key": 39,
+   "file": "39-profesor.jpeg",
+   "label": "Profesor"
+  },
+  {
+   "key": 40,
+   "file": "40-agua.jpeg",
+   "label": "Agua"
+  },
+  {
+   "key": 41,
+   "file": "41-loro.jpeg",
+   "label": "Loro"
+  },
+  {
+   "key": 42,
+   "file": "42-mariposa.jpeg",
+   "label": "Mariposa"
+  },
+  {
+   "key": 43,
+   "file": "43-pelota.jpeg",
+   "label": "Pelota"
+  },
+  {
+   "key": 44,
+   "file": "44-picaflor.jpeg",
+   "label": "Picaflor"
+  },
+  {
+   "key": 45,
+   "file": "45-bicicleta.jpeg",
+   "label": "Bicicleta"
+  }
+ ],
+ "riddles": [
+  {
+   "unit": 1,
+   "position": 0,
+   "quechua": "Juk runa tukuy pachapi kimsa chakayuq sayan",
+   "translation": "Una persona todo el tiempo esta estático con tres caderas.",
+   "label": "Piwra",
+   "image": 0
+  },
+  {
+   "unit": 1,
+   "position": 1,
+   "quechua": "Muyuspa, muyuspa chichuyan.",
+   "translation": "Girando, girando se embaraza.",
+   "label": "Puchka (Huso)",
+   "image": 1
+  },
+  {
+   "unit": 4,
+   "position": 2,
+   "quechua": "Pampaman chuqawanku chanta muyuni mana manchikuspa",
+   "translation": "Me lanzan al suelo y giro sin miedo.",
+   "label": "P’isquyñu (Trompo)",
+   "image": 2
+  },
+  {
+   "unit": 1,
+   "position": 2,
+   "quechua": "Yarqhayta qhichuni Puñuyta qhichuni Qallpata churani",
+   "translation": "Quito el hambre, el sueño y doy fuerza.",
+   "label": "Kuka (Coca)",
+   "image": 3
+  },
+  {
+   "unit": 2,
+   "position": 0,
+   "quechua": "Juch’uy kani jinaman sumaqta rump’ini chantapis masarata munani.",
+   "translation": "Chiquito pero veloz y me gusta el queso.",
+   "label": "Juk’ucha (Ratón)",
+   "image": 4
+  },
+  {
+   "unit": 2,
+   "position": 1,
+   "quechua": "P’unchawpi puñini, tutapi purini karumantaq manchayta waqachan.",
+   "translation": "De día duerme, de noche camina y de lejos huele desagradable.",
+   "label": "Añathuya (Zorrino)",
+   "image": 5
+  },
+  {
+   "unit": 1,
+   "position": 3,
+   "quechua": "Q'uñipi qunqawanku Chiripi yuyariwanku Umapi apawanku",
+   "translation": "Cuando hace calor no se recuerdan, cuando hace frio me usan.",
+   "label": "Ch’ullu (Gorro)",
+   "image": 6
+  },
+  {
+   "unit": 3,
+   "position": 4,
+   "quechua": "Uman yuraq Pulliran q'umir",
+   "translation": "Su cabeza es blanco y su pollera es verde.",
+   "label": "Siwilla (Cebolla)",
+   "image": 7
+  },
+  {
+   "unit": 2,
+   "position": 2,
+   "quechua": "Punchuywan p’achallisqa tuta p’unchaw purini, sapa wañusqa kachkaptiy suwawanku",
+   "translation": "Ando abrigado día y noche, solo me quitan mi abrigo cuando muera.",
+   "label": "Uwija (Oveja)",
+   "image": 8
+  },
+  {
+   "unit": 3,
+   "position": 0,
+   "quechua": "Ñuqamanta tukuy pakakunku Tukuy manchachikuwanku",
+   "translation": "De mi todos se ocultan y me tienen miedo.",
+   "label": "Relámpago",
+   "image": 9
+  },
+  {
+   "unit": 3,
+   "position": 1,
+   "quechua": "K’acha kani Juk phiñarikuni Nipipis sayayta atiwanchu.",
+   "translation": "Soy bonito, si me molesto nadie me para.",
+   "label": "Wayra (Viento)",
+   "image": 10
+  },
+  {
+   "unit": 6,
+   "position": 0,
+   "quechua": "Jap’ichiwanku, mana ch’inchu kani, mana ñuqawan ñawpaqman mana purinqankuchu.",
+   "translation": "Enciendo y hago ruido, sin mí no hay recorrido.",
+   "label": "Motor",
+   "image": 11
+  },
+  {
+   "unit": 5,
+   "position": 0,
+   "quechua": "Jatun tawa chakisniyuq kallpasapa qhari karini, p’isqukuna manchayta qhapariptiy ripuranki, mana sayarispa tarpuykillapi llamk’ani.",
+   "translation": "Tengo ruedas grandes y fuerza sin igual, mi rugido espanta las aves, trabajo sin cesar en la época de siembra",
+   "label": "Tractor",
+   "image": 12
+  },
+  {
+   "unit": 5,
+   "position": 1,
+   "quechua": "La Paz llaqtallapi rikuwanki, mana lata p’isquchu kani phawanaypaq.",
+   "translation": "Solo me encuentro en ciudad de la paz Voy por los aires sin ser un avión",
+   "label": "Teleférico",
+   "image": 13
+  },
+  {
+   "unit": 5,
+   "position": 2,
+   "quechua": "Kimsa sinku kapuwan, tukuy ñan puriypi purikamuni, ñanpuriykunapi, chantapis tukuy ñankunata apaykiman",
+   "translation": "Tengo tres ruedas y puedo pasear, por calles, también todos los caminos te puedo recorrer.",
+   "label": "Mototaxi",
+   "image": 14
+  },
+  {
+   "unit": 5,
+   "position": 3,
+   "quechua": "Run, run,run, run ñispa purini, mana ni pi jap’iyta atiwanchu, tukuy ñanpuriyta sumaqta riqsini.",
+   "translation": "Run, run ,run diciendo camino, nadie me puede agarrar, conozco todos los caminos",
+   "label": "Moto",
+   "image": 15
+  },
+  {
+   "unit": 5,
+   "position": 4,
+   "quechua": "iskay sinkup qhipanta rini, jallp’ata qkullispa tarpuyta wakichispa",
+   "translation": "Voy detrás de dos ruedas grandes removiendo la tierra,",
+   "label": "Rastra",
+   "image": 16
+  },
+  {
+   "unit": 6,
+   "position": 1,
+   "quechua": "Wicharichiyki chanta mana sayaspa uraqachiyki , jutk-ukunata phawachiyki",
+   "translation": "Subo y bajo sin parar, los huecos te hago saltar.",
+   "label": "Suspensión",
+   "image": 17
+  },
+  {
+   "unit": 6,
+   "position": 5,
+   "quechua": "Muyuni, muyuni mana sayaspa, ñawpaqman purinaykipaq yanapayki",
+   "translation": "Giro y giro sin parar y te ayudo a avanzar.",
+   "label": "Ruedas",
+   "image": 18
+  },
+  {
+   "unit": 6,
+   "position": 2,
+   "quechua": "mana willarispa p’itikusaq chayqa, awtuyki sayarparinqa",
+   "translation": "Si me rompo sin aviso, tu carro queda parado.",
+   "label": "Correa",
+   "image": 19
+  },
+  {
+   "unit": 7,
+   "position": 0,
+   "quechua": "Mana ñuqawanqa, lluq'iman nitaq pañaman muyuriyta atinkimanchu",
+   "translation": "Sin mí no puedes girar a la izquierda ni a la derecha.",
+   "label": "Volante",
+   "image": 20
+  },
+  {
+   "unit": 8,
+   "position": 3,
+   "quechua": "Ñawpaqman richkani, ñanniykita k'anchaspa",
+   "translation": "Voy adelantando brillando iluminando tu camino.",
+   "label": "Faros",
+   "image": 21
+  },
+  {
+   "unit": 8,
+   "position": 6,
+   "quechua": "Kichani, wisq'ani mana sayaspa, yaykunaykipaq",
+   "translation": "Abro y cierro sin parar para que puedas entrar.",
+   "label": "Puerta",
+   "image": 22
+  },
+  {
+   "unit": 7,
+   "position": 5,
+   "quechua": "Q'uñi purisqaykipi chiriyayta munanki chayqa, chiriyachimuq jamuni",
+   "translation": "Si hace calor en tu andar yo te vengo a refrescar.",
+   "label": "Aire acondicionado",
+   "image": 23
+  },
+  {
+   "unit": 8,
+   "position": 0,
+   "quechua": "jap'ichiptiyki awtuta sayarparin",
+   "translation": "Si me usas el carro queda estacionado.",
+   "label": "Freno de mano",
+   "image": 24
+  },
+  {
+   "unit": 8,
+   "position": 5,
+   "quechua": "Qhipata qhawachkani, tukuyta rikhurichispa",
+   "translation": "Voy vigilando detrás, todo lo voy reflejando.",
+   "label": "Retrovisor",
+   "image": 25
+  },
+  {
+   "unit": 8,
+   "position": 4,
+   "quechua": "Uraqantaq wicharintaq mana wicharinachu,chantaqa pichan q'ispillu",
+   "translation": "Sube y baja, pero no soy ascensor. Limpio el vidrio cuando llueve con fuerza.",
+   "label": "Limpiaparabrisas",
+   "image": 26
+  },
+  {
+   "unit": 8,
+   "position": 1,
+   "quechua": "Saruwanki sayanaypaq mana ñak’ari kanampaq",
+   "translation": "Me pisas para detener, y así evitar cualquier choque.",
+   "label": "Pedal del freno",
+   "image": 27
+  },
+  {
+   "unit": 6,
+   "position": 6,
+   "quechua": "Muyu,muyuqtaq apayki uqchiq’amanta uqladuman",
+   "translation": "Redonda y giratoria, te llevo de un lugar a otro.",
+   "label": "Llanta",
+   "image": 28
+  },
+  {
+   "unit": 7,
+   "position": 1,
+   "quechua": "Tiyapuwan yupaykuna siraykuna ñisqayki imaynatacha rump’ichani",
+   "translation": "Tengo números y agujas, y te digo a qué velocidad vas.",
+   "label": "Velocímetro",
+   "image": 29
+  },
+  {
+   "unit": 7,
+   "position": 2,
+   "quechua": "Apayqachawanki kuyuchinapaq rump’ichaptin sayachinapaq",
+   "translation": "Me usas para cambiar de marcha y controlar.",
+   "label": "Palanca de cambios",
+   "image": 30
+  },
+  {
+   "unit": 8,
+   "position": 2,
+   "quechua": "Jalch’ayki allinmanta chukunapi",
+   "translation": "Te mantengo seguro en tu asiento,",
+   "label": "Cinturón de seguridad",
+   "image": 31
+  },
+  {
+   "unit": 6,
+   "position": 3,
+   "quechua": "Muyu kani muyurispa mana ch’aqwarispa apayki",
+   "translation": "Soy redondo y siempre voy girando, sin hacer ruido te voy llevando.",
+   "label": "Rodamiento",
+   "image": 32
+  },
+  {
+   "unit": 7,
+   "position": 3,
+   "quechua": "Maypichus kuriq tiyakun puriysin ch’usasaqtin mana sayaspa",
+   "translation": "Donde el piloto se va a sentar, acompaña viajes sin parar.",
+   "label": "Asiento",
+   "image": 33
+  },
+  {
+   "unit": 6,
+   "position": 4,
+   "quechua": "Saywa sinch’i k’acha kawsay sayachin tukuy qipita",
+   "translation": "Es la columna, fuerte y fiel, sostiene todo del carrusel.",
+   "label": "Chasis",
+   "image": 34
+  },
+  {
+   "unit": 7,
+   "position": 4,
+   "quechua": "Anchata willarin,takispa ripun sumaq kusisqa masinwan ch’usan",
+   "translation": "Canta noticias o música al pasar, compañero del viaje para animar.",
+   "label": "Radio",
+   "image": 35
+  },
+  {
+   "unit": 3,
+   "position": 2,
+   "quechua": "Janaqpacha pampapiqa achka kinuwa mast'asqa kachkan.",
+   "translation": "En todo el cielo hay mucha quinua esparcida.",
+   "label": "Estrella",
+   "image": 36
+  },
+  {
+   "unit": 1,
+   "position": 4,
+   "quechua": "Ñañu kaspikunamanta ruwasqa kani jinallataq umata ñaqch’ani wawa imillakunata unaypi waqachik kani chaymanta saqra, saqra niwaq kanku.",
+   "translation": "Estoy hecho de palos gruesos y me afeito la cabeza, nena. Solía hacer llorar a las chicas durante mucho tiempo y me llamaban malvada, malvada.",
+   "label": "Peine de paja",
+   "image": 37
+  },
+  {
+   "unit": 4,
+   "position": 0,
+   "quechua": "Ukhupi killinsa kani, jawapitaq kaspi kani, chanta panqa ruwaypi anchata puriykachani.",
+   "translation": "Por adentro soy de carbón por fuera soy una palo de madera y estoy muy ocupada y camino encima del papel.",
+   "label": "Lápiz",
+   "image": 38
+  },
+  {
+   "unit": 4,
+   "position": 1,
+   "quechua": "Ukhu yachaywasipi, imaymanata yachachiwanki, juk p’unchay niwasqaykita manapuni qunqasaqchu",
+   "translation": "En la escuela me enseñas cosas nuevas, que nunca olvidaré algún día.",
+   "label": "Profesor",
+   "image": 39
+  },
+  {
+   "unit": 3,
+   "position": 3,
+   "quechua": "Ñuqa kawsay kani, runakuna, uywakuna, sach’akuna Kawsanankupaq upyawanku.",
+   "translation": "Soy vida, las personas, los animales, los árboles me beben para vivir.",
+   "label": "Agua",
+   "image": 40
+  },
+  {
+   "unit": 2,
+   "position": 3,
+   "quechua": "Q’umir llimpi kachkan, ancha parlaysapa, runa parlapaqtin pay yachapan.",
+   "translation": "Es verde, muy hablador y cuando la gente habla el repite.",
+   "label": "Loro",
+   "image": 41
+  },
+  {
+   "unit": 2,
+   "position": 4,
+   "quechua": "Runtumanta paqarikuni, khurupi kutinaypaq chanta p’isqujina phawanaypaq.",
+   "translation": "Nazco del huevo, para volver a gusano y volar como un pájaro.",
+   "label": "Mariposa",
+   "image": 42
+  },
+  {
+   "unit": 4,
+   "position": 3,
+   "quechua": "Murqu muyulla kani, wawakuna manchayta jayt`ayta munawanku",
+   "translation": "Soy redondo y los niños siempre quieren patearme",
+   "label": "Pelota",
+   "image": 43
+  },
+  {
+   "unit": 2,
+   "position": 5,
+   "quechua": "T’ikamanta t`ikamanta purí, sutintaq khanin jinallataq tikachasqa sutin kachkan .",
+   "translation": "De flor en flor camino, asi como la flor es su nombre",
+   "label": "Picaflor",
+   "image": 44
+  },
+  {
+   "unit": 5,
+   "position": 5,
+   "quechua": "Iskay waqrayuq kani mana wacachu kani iskay chakiyuq kani mana runachu kani tukuyta apani mana burruchu kani.",
+   "translation": "Tengo dos cuernos, no soy una vaca tengo dos piernas, no soy un hombre, llevo a todos y no soy un burro.",
+   "label": "Bicicleta",
+   "image": 45
+  }
+ ]
+}

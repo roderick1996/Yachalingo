@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: { name: imasmari-config, namespace: imasmari }
+data:
+  UPLOAD_DIR: /data/uploads
+  ADMIN_USER: admin
+  SEED: "true"
+---
+apiVersion: v1
+kind: Secret
+metadata: { name: imasmari-secret, namespace: imasmari }
+type: Opaque
+stringData:
+  POSTGRES_PASSWORD: cambia-esta-clave
+  DATABASE_URL: postgresql://imasmari:cambia-esta-clave@postgres:5432/imasmari
+  JWT_SECRET: cambia-este-secreto
+  ADMIN_PASSWORD: cambia-admin
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: backend, namespace: imasmari }
+spec:
+  replicas: 1   # 1 réplica: el PVC de imágenes es ReadWriteOnce
+  selector: { matchLabels: { app: backend } }
+  template:
+    metadata: { labels: { app: backend } }
+    spec:
+      containers:
+        - name: backend
+          image: imasmari-backend:latest
+          imagePullPolicy: IfNotPresent
+          ports: [{ containerPort: 3000 }]
+          envFrom:
+            - configMapRef: { name: imasmari-config }
+            - secretRef: { name: imasmari-secret }
+          readinessProbe: { httpGet: { path: /api/health, port: 3000 }, initialDelaySeconds: 10 }
+          volumeMounts: [{ name: uploads, mountPath: /data/uploads }]
+      volumes:
+        - name: uploads
+          persistentVolumeClaim: { claimName: uploads-pvc }
+---
+apiVersion: v1
+kind: Service
+metadata: { name: backend, namespace: imasmari }
+spec:
+  selector: { app: backend }
+  ports: [{ port: 3000, targetPort: 3000 }]

@@ -1,0 +1,31 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: imasmari
+      POSTGRES_PASSWORD: imasmari
+      POSTGRES_DB: imasmari
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U imasmari"]
+      interval: 5s
+      retries: 10
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql://imasmari:imasmari@db:5432/imasmari
+      JWT_SECRET: cambia-esto-en-produccion
+      ADMIN_USER: admin
+      ADMIN_PASSWORD: TuClaveSegura2026!
+      UPLOAD_DIR: /data/uploads
+      SEED: "true"
+    volumes: [uploads:/data/uploads]
+    depends_on:
+      db: { condition: service_healthy }
+  frontend:
+    build: ./frontend
+    ports: ["9000:80"]
+    depends_on: [backend]
+volumes:
+  pgdata:
+  uploads:
